@@ -16,11 +16,13 @@ The routines that can be called from the VM are:
 
 The example code uses all the aforementioned, it creates a file `storage/MegaRibi.txt` (if it doesn't already exist), writes `nos!` twice in it, then seeks to position inbetween where it reads `s!n`. After that the file is closed, useful data is shown about the file and then the file is unlinked.
 The result in the prompt is as shown.
-<img src="screenshotPrompt.png" alt="Instruction structure" style="width:60%;display: block;margin-left: auto;margin-right: auto;"/>
+
+<img src="screenshotPrompt.PNG" alt="Cpmmand Prompt" style="width:60%;display: block;margin-left: auto;margin-right: auto;"/>
 
  ## Instruction-set
  SVEU16 is a RISC type for easier structure. Memory capacity for this processor is 128KB organised as 65536 (2<sup>16</sup>) 16-bit adresses. There is 16 registries, with the last one (R15) being the PC (program counter).
  The instructuin structure is given as 
+ 
  <img src="instruction.png" alt="Instruction structure" style="width:80%;display: block;margin-left: auto;margin-right: auto;"/>
 
  Instruction-set for the SVEU16 processor are given below:
